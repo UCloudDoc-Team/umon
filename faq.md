@@ -6,6 +6,8 @@
 
 **解决方法：**
 
+0）当前uma新版本已修复此类问题，若仍有异常可参考下述处理方式，或直接联系我们[技术支持](https://www.ucloud.cn/site/service.html)
+
 1）修改/usr/libs/uma\_py/umacommon/umaiostat.py,在第45行增加四个ignore
 
 ``` 
