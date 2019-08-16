@@ -73,7 +73,7 @@ POST方式发送到指定URL，您可以对收到信息进行处理。
 
 **依赖外部环境**
 
-根据UCloud相关操作说明创建系统为CentOS的UHost
+根据UCloud相关操作说明创建系统为CentOS的UHost：
 
     弹性IP: 106.75.49.79 BGP 2 Mb
     外网防火墙: Web服器推荐(22，3389，80，443)
@@ -88,7 +88,7 @@ POST方式发送到指定URL，您可以对收到信息进行处理。
 # chkconfig mysqld on
 ```
 
-创建名为monitor\_warn的数据库，并使用以下表结构
+创建名为monitor\_warn的数据库，并使用以下表结构:
 
 ``` mysql
 # mysql
@@ -120,13 +120,13 @@ export GOPATH=/usr/local/golang
 export PATH=$PATH:$GOPATH/bin
 ```
 
-加载已配置环境变量
+加载已配置环境变量:
 
 ```
 # source ~/.bashrc
 ```
 
-查看已配置go环境变量
+查看已配置go环境变量:
 
 ```
 # go env
@@ -158,26 +158,26 @@ CGO_ENABLED="1"
 
 #### 部署代码
 
-1.从github上将代码拷贝下载到本地
+1.从github上将代码拷贝下载到本地:
 
 ```
 # git clone https://github.com/ucloud/umon_webhook.git
 ```
 
-2.在目录umon\_webhook中创建名为src指向webhook-demo-go的软链接
+2.在目录umon\_webhook中创建名为src指向webhook-demo-go的软链接:
 
 ```
 # cd umon_webhook
 # ln -s $PWD/webhook-demo-go src
 ```
 
-3.将目录umon\_webhook添加到GOPATH中
+3.将目录umon\_webhook添加到GOPATH中:
 
 ```
 # export GOPATH=$GOPATH:$PWD
 ```
 
-4.在目录webhook-demo-go中编译
+4.在目录webhook-demo-go中编译:
 
 ```
 # cd webhook-demo-go
@@ -186,7 +186,7 @@ CGO_ENABLED="1"
 
 #### 配置
 
-1\. 根据数据库表相关信息，修改webhook-demo-go/etc/conf.ini
+1. 根据数据库表相关信息，修改webhook-demo-go/etc/conf.ini:
 
 ``` json
 {
@@ -199,7 +199,7 @@ CGO_ENABLED="1"
 }
 ```
 
-2.执行编译生成的可执行程序webhook-demo-go，默认加载etc/conf.ini文件，也可以指定其他位置配置文件
+2.执行编译生成的可执行程序webhook-demo-go，默认加载etc/conf.ini文件，也可以指定其他位置配置文件:
 
 ```
 # ./webhook-demo-go &
