@@ -4,6 +4,8 @@
 
 监控代理是UCloud自主研发并开源的辅助agent程序，在云主机或物理云主机中安装监控代理，能够让资源与云平台监控系统更好的协同工作，以扩展对资源的监控深度，丰富监控指标（如内存、磁盘空间、进程等）。
 
+
+
 ## 1.版本说明
 
 | 更新时间   | Agent版本 | 更新内容说明                                                 | 备注 |
@@ -19,10 +21,7 @@
 | 2016.01.07 | v1.0.1    | 修复 磁盘名称过长导致采集数据错误的bug                       |      |
 | 2015.10.29 | v1.0.0    | 1、优化 新版使用C和Python混合编写，无需安装nodejs等依赖库文件。2、优化 简化配置并能够将配置复用，避免了拷贝配置无法供其他主机使用的问题。3、修复 内存泄露问题。4、优化 支持自动更新。5、新增 支持windows操作系统的监控代理 |      |
 
-**注释**：
-
-- 如需使用Linux内网数据上报版本，请重新安装agent；
-- umagent已支持物理云主机，如安装后启动报错，请根据报错信息解决依赖关系。
+> **注释**：如需使用Linux内网数据上报版本，请重新安装agent；umagent已支持物理云主机，如安装后启动报错，请根据报错信息解决依赖关系。
 
 
 
@@ -51,17 +50,23 @@ wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.1.5-1.i386.rpm
 rpm -ivh uma-1.1.5-1.i386.rpm
 ```
 
+
+
 ### 3.2 启动
 
 ```
 service uma start
 ```
 
+
+
 ### 3.3 停止
 
 ```
 service uma stop
 ```
+
+
 
 ### 3.4 卸载
 
@@ -90,17 +95,23 @@ dpkg -i uma_1.1.5-1_i386.deb
 
 ```
 
+
+
 ### 4.2 启动
 
 ```
 service uma start
 ```
 
+
+
 ### 4.3 停止
 
 ```
 service uma stop
 ```
+
+
 
 ### 4.4 卸载
 
@@ -121,17 +132,23 @@ wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.1.5-1.suse.x86_64.rp
 rpm -ivh uma-1.1.5-1.suse.x86_64.rpm
 ```
 
+
+
 ### 5.2 启动
 
 ```
 service uma start
 ```
 
+
+
 ### 5.3 停止
 
 ```
 service uma stop
 ```
+
+
 
 ### 5.4 卸载
 
@@ -152,11 +169,15 @@ cd uma
 make && make install
 ```
 
+
+
 ### 6.2 启动
 
 ```
 /usr/sbin/uma 或 ./bin/uma
 ```
+
+
 
 ### 6.3 停止
 
@@ -164,12 +185,16 @@ make && make install
 源代码编译版本，需要手动执行kill终结进程。
 ```
 
+
+
 ### 6.4 卸载
 
 ```
 进入源代码安装包，执行 make uninstall 卸载程序。
 
 ```
+
+
 
 ### 6.5 自动启动
 
@@ -185,9 +210,9 @@ make && make install
 
 本安装示例基于Windows2008操作系统。
 
-```
-注解：Windows系统暂不支持CPU负载与TCP连接数监控指标。
-```
+> 注解：Windows系统暂不支持CPU负载与TCP连接数监控指标。
+
+
 
 ### 7.1 安装
 
@@ -236,6 +261,8 @@ sc query uagent
 
 ![](D:/MyCloud/GitHub/umon%20-%20%E5%89%AF%E6%9C%AC/images/win-uma13.png)
 
+
+
 ### 7.3 卸载
 
 点击开始菜单，选择卸载uagent;
@@ -262,6 +289,8 @@ sc stop uagent
 
 最后，删除uagent安装目录，即可完成卸载。
 
+
+
 ### 7.4 配置
 
 windows uagent默认使用ip为10.x.x.x的网卡识别主机，若用户主机使用了子网特性后，可能会出现多张网卡，或者网卡ip非10.x.x.x的情况，该情况可能导致主机识别失败，对于此种情况，可以在配置文件uagent安装目录下：configure/static\_conf.json中添加配置macAddress解决(mac地址可在ipconfig
@@ -281,6 +310,8 @@ windows uagent默认使用ip为10.x.x.x的网卡识别主机，若用户主机�
 当前agent版本已加入物理云主机磁盘健康状态检查的指标。该指标只返回0和1，0表示磁盘健康，否则返回1
 
 安装依赖关系：依赖关系： 1. smartmontools 2. MegaCli64 3. dmidecode 4. hpssacli
+
+
 
 ### 8.1 CentOS操作系统
 
@@ -302,6 +333,8 @@ yum clean all
 yum makecache
 yum install smartmontools dmidecode MegaCli hpssacli
 ```
+
+
 
 ### 8.2 Ubuntu操作系统
 
@@ -341,7 +374,7 @@ cat /proc/sys/net/ipv4/tcp_timestamps
 
 2.通过手动下载依赖包安装
 
-rpm包下载链接
+rpm包下载链接（暂仅支持登录主机后下载）
 
 <http://ucloud.mirror.ucloud.cn/centos/6/x86_64/Packages/MegaCli-8.07.14-1.noarch.rpm>
 <http://ucloud.mirror.ucloud.cn/centos/6/x86_64/Packages/hpssacli-2.0-23.0.x86_64.rpm>
@@ -349,7 +382,7 @@ rpm包下载链接
 <http://mirrors.ucloud.cn/centos/6/os/x86_64/Packages/mailx-12.4-8.el6_6.x86_64.rpm>
 <http://mirrors.ucloud.cn/centos/6/os/x86_64/Packages/dmidecode-2.12-7.el6.x86_64.rpm>
 
-deb下载链接
+deb下载链接（暂仅支持登录主机后下载）
 
 <http://ucloud.mirrors.ucloud.cn/ubuntu/ucloud/pool/main/m/megacli/megacli_8.07.10-2_all.deb>
 <http://ucloud.mirrors.ucloud.cn/ubuntu/ucloud/pool/main/h/hpssacli/hpssacli_2.0-24_amd64.deb>
