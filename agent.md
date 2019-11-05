@@ -210,7 +210,7 @@ make && make install
 
 本安装示例基于Windows2008操作系统。
 
-> 注解：Windows系统暂不支持CPU负载与TCP连接数监控指标。
+> 注解：Windows系统暂不支持CPU负载与TCP连接数监控指标，暂不支持物理云
 
 
 
