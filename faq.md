@@ -10,7 +10,7 @@
 
 **解决方法：**
 
-- **处理方案1**：建议您升级到uma1.1.5及以上版本（详见：[新版监控代理安装](https://docs.ucloud.cn/management_monitor/umon/agent )），已修复此类问题；
+- **处理方案1**：建议您升级到uma1.1.5及以上版本（详见：[新版监控代理安装](https://docs.ucloud.cn/umon/agent )），已修复此类问题；
 - **处理方案2**：在uma版本不升级的情况下，可以通过修改/usr/libs/uma\_py/umacommon/umaiostat.py,在第45行增加四个ignore（见下述），修改后重启uma，也可解决。
 
 ``` 
