@@ -29,6 +29,7 @@
 
 - 安装过程需要使用系统管理员用户(如root, administrator等)。
 - Linux或ubuntu系统需要安装**Python2.6或Python2.7版本**（暂不支持Python3.x版本）。
+- 安装过程需要在UCLOUD云主机的内网环境下进行。
 
 
 
