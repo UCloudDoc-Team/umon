@@ -15,20 +15,21 @@
 
 
 
-### 2.1 订阅管理–设置通知方式与通知对象
+### 2.2 订阅管理–设置通知方式与通知对象
 ![](D:/MyCloud/GitHub/umon/images/message2.png)
 
 
 
-### 2.1 订阅管理--消息列表
+### 2.3 订阅管理--消息列表
 
-A:支持对消息类型、订阅状态（启用/停用）进行过滤筛选。
+A、支持对消息类型、订阅状态（启用/停用）进行过滤筛选。
 ![](D:/MyCloud/GitHub/umon/images/message3.png)
 
-B:支持批量启用/停用订阅消息
+B、支持批量启用/停用订阅消息
 ![](D:/MyCloud/GitHub/umon/images/message4.png)
 
-C:支持批量设置通知对象
+C、支持批量设置通知对象
 ![](D:/MyCloud/GitHub/umon/images/message5.png)
+
 
 
