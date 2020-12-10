@@ -1,4 +1,3 @@
-<div class="sidebar_title icon__umon"> 云监控 UMon</div>
 
 * [概览](/umon/README)
 * [产品简介](/umon/intro)
