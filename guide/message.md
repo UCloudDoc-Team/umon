@@ -35,6 +35,6 @@ B、支持批量启用/停用订阅消息
 
 C、支持批量设置通知对象
 ![](D:/MyCloud/GitHub/umon/images/message5.png)
-
+  
 
 
