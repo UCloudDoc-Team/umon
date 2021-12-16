@@ -37,7 +37,7 @@
 
 
 
-## 3. Red Hat/CentOS 全系列
+## 3.Red Hat/CentOS 全系列
 
 ### 3.1.1 python2版本uma安装
 
