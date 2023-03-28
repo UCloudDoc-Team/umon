@@ -51,15 +51,15 @@
 64位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.1.x86_64.rpm
-rpm -ivh uma-1.2.1.x86_64.rpm
+wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.1-1.x86_64.rpm
+rpm -ivh uma-1.2.1-1.x86_64.rpm
 ```
 
 32位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.1.i386.rpm
-rpm -ivh uma-1.2.1.i386.rpm
+wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.1-1.i386.rpm
+rpm -ivh uma-1.2.1-1.i386.rpm
 ```
 
 ### 3.1.2 python3版本uma安装 
@@ -112,15 +112,15 @@ rpm -e uma-py3
 64位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.1_amd64.deb
-dpkg -i uma_1.2.1_amd64.deb
+wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.1-1_amd64.deb
+dpkg -i uma_1.2.1-1_amd64.deb
 ```
 
 32位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.1_i386.deb
-dpkg -i uma_1.2.1_i386.deb
+wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.1-1_i386.deb
+dpkg -i uma_1.2.1-1_i386.deb
 
 ```
 
@@ -176,8 +176,8 @@ dpkg -P uma-py3
 64位操作系统:
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.1.suse.x86_64.rpm
-rpm -ivh uma-1.2.1.suse.x86_64.rpm
+wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.1-1.suse.x86_64.rpm
+rpm -ivh uma-1.2.1-1.suse.x86_64.rpm
 ```
 
 
