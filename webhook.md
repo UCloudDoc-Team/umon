@@ -29,7 +29,8 @@ POST方式发送到指定URL，您可以对收到信息进行处理。
     ResourceId: "uhost-xxxx",
     MetricName: "MemUsage",
     AlarmTime: 1458733318,
-    RecoveryTime : 0
+    RecoveryTime : 0，
+    Content："【UCloud】告警:北京二 2023-08-05 11:30:04 UDB(ID:udb-bc2o00eu3-bb-0.0.0.0-)连接数(330.00个)<6000个(优刻得公司)"
 }
 ```
 
@@ -43,7 +44,8 @@ POST方式发送到指定URL，您可以对收到信息进行处理。
     ResourceId: "uhost-xxxx",
     MetricName: "MemUsage",
     AlarmTime: 0,
-    RecoveryTime: 1458733318
+    RecoveryTime: 1458733318,
+    Content："【UCloud】告警恢复:北京二 2023-08-05 11:30:04 UDB(ID:udb-bc2o00eu3-bb-0.0.0.0-)连接数(330.00个)<6000个(优刻得公司)"
 }
 ```
 
