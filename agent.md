@@ -10,7 +10,7 @@
 
 | 更新时间   | Agent版本 | 更新内容说明                                                 | 备注 |
 | ---------- | --------- | ------------------------------------------------------------ | ---- |
-| 2023.08.15 | v1.2.3    | 新增 支持适配Rocky 9.1 64位、Ubuntu 22.04 64位、Ubuntu 20.04 64位、Ubuntu 18.04 64位、高内核Ubuntu 18.04 64位镜像                             |  仅在python2上支持该功能   |
+| 2023.08.15 | v1.2.3    | 新增 支持适配Rocky 9.1 64位、Ubuntu 22.04 64位、Ubuntu 20.04 64位、Ubuntu 18.04 64位、高内核Ubuntu 18.04 64位镜像                             |     |
 | 2023.06.20 | v1.2.2    | 新增 在python3上支持物理云主机/dev/nvme监控                               |     |
 | 2022.12.07 | v1.2.1    | 新增 uma采集支持多磁盘分区使用率监控                                       |仅在python2上支持该功能|
 | 2022.09.05 | v1.2.0    | 优化 uma采集内存使用率的逻辑                                             |仅在python2上支持该功能|
@@ -53,14 +53,14 @@
 64位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.1-1.x86_64.rpm
+wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.3-1.x86_64.rpm
 rpm -ivh uma-1.2.3-1.x86_64.rpm
 ```
 
 32位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.1-1.i386.rpm
+wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.3-1.i386.rpm
 rpm -ivh uma-1.2.3-1.i386.rpm
 ```
 
@@ -114,14 +114,14 @@ rpm -e uma-py3
 64位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.1-1_amd64.deb
+wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.3-1_amd64.deb
 dpkg -i uma_1.2.3-1_amd64.deb
 ```
 
 32位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.1-1_i386.deb
+wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.3-1_i386.deb
 dpkg -i uma_1.2.3-1_i386.deb
 
 ```
@@ -178,7 +178,7 @@ dpkg -P uma-py3
 64位操作系统:
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.1-1.suse.x86_64.rpm
+wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.3-1.suse.x86_64.rpm
 rpm -ivh uma-1.2.3-1.suse.x86_64.rpm
 ```
 
@@ -215,7 +215,7 @@ rpm -e uma
 ### 6.1 安装
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.1.tar.gz
+wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.3.tar.gz
 tar zxvf uma-1.2.3.tar.gz
 cd uma
 make && make install
