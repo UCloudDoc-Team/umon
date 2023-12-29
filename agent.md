@@ -10,6 +10,7 @@
 
 | 更新时间   | Agent版本 | 更新内容说明                                                 | 备注 |
 | ---------- | --------- | ------------------------------------------------------------ | ---- |
+| 2023.12.28 | v1.2.5    | 新增 支持空闲内存量、已用内存量、可用内存量指标采集                     |     |
 | 2023.11.06 | v1.2.4    | 新增 支持GPU使用率、ECC纠错、驱动可识别性指标采集                          |     |
 | 2023.08.15 | v1.2.3    | 新增 支持适配Rocky 8.5 64位、Rocky 9.1 64位、Ubuntu 22.04 64位、Ubuntu 20.04 64位、Ubuntu 18.04 64位、高内核Ubuntu 18.04 64位镜像                             |     |
 | 2023.06.20 | v1.2.2    | 新增 在python3上支持物理云主机/dev/nvme监控                               |     |
@@ -59,15 +60,15 @@
 64位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.4-1.x86_64.rpm
-rpm -ivh uma-1.2.4-1.x86_64.rpm
+wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.5-1.x86_64.rpm
+rpm -ivh uma-1.2.5-1.x86_64.rpm
 ```
 
 32位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.4-1.i386.rpm
-rpm -ivh uma-1.2.4-1.i386.rpm
+wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.5-1.i386.rpm
+rpm -ivh uma-1.2.5-1.i386.rpm
 ```
 
 ### 3.1.2 python3版本uma安装 
@@ -75,8 +76,8 @@ rpm -ivh uma-1.2.4-1.i386.rpm
 64位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma-py3-1.2.4-1.x86_64.rpm
-rpm -ivh uma-py3-1.2.4-1.x86_64.rpm
+wget http://umon.api.service.ucloud.cn/static/umatest/uma-py3-1.2.5-1.x86_64.rpm
+rpm -ivh uma-py3-1.2.5-1.x86_64.rpm
 ```
 
 
@@ -124,15 +125,15 @@ rpm -e uma-py3
 64位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.4-1_amd64.deb
-dpkg -i uma_1.2.4-1_amd64.deb
+wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.5-1_amd64.deb
+dpkg -i uma_1.2.5-1_amd64.deb
 ```
 
 32位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.4-1_i386.deb
-dpkg -i uma_1.2.4-1_i386.deb
+wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.5-1_i386.deb
+dpkg -i uma_1.2.5-1_i386.deb
 
 ```
 
@@ -141,8 +142,8 @@ dpkg -i uma_1.2.4-1_i386.deb
 64位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma-py3_1.2.4-1_amd64.deb
-dpkg -i uma-py3_1.2.4-1_amd64.deb
+wget http://umon.api.service.ucloud.cn/static/umatest/uma-py3_1.2.5-1_amd64.deb
+dpkg -i uma-py3_1.2.5-1_amd64.deb
 ```
 
 
