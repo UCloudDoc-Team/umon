@@ -218,7 +218,6 @@ H20：
 
 |镜像名称|操作系统|集成软件|
 |:----|:----|:----|
-|预装驱动|Windows 2019 64位|nvidia560.81  cuda12.6|
 |预装驱动|Ubuntu 20.04 64位|nvidia535.54.03  cuda12.1|
 |预装驱动|Ubuntu 20.04 64位|nvidia545.23.08  cuda12.3|
 |预装驱动|Ubuntu 22.04 64位|nvidia535.146.02  cuda12.2|
@@ -226,9 +225,7 @@ H20：
 |预装驱动|Ubuntu 22.04 64位|nvidia550.67  cuda12.4  pytorch2.3.0|
 |预装驱动|Ubuntu 20.04 64位|nvidia550.67  cuda12.4  pytorch2.3.0|
 |预装驱动|Ubuntu 22.04 64位|nvidia535.161.07  cuda12.2  uefi|
-|预装驱动|Windows 2022 64位|nvidia551.61|
-|预装驱动|Windows 2019 64位 EN|nvidia531.18  cuda12.1.68  Tensorflow2.11.0|
-|预装驱动|Windows 2019 64位|nvidia516.59  cuda11.7|
+
 
 
 高性价比显卡6增强型：
@@ -244,5 +241,4 @@ H20：
 |预装驱动|Ubuntu 22.04 64位|nvidia550.67  cuda12.4  pytorch2.3.0|
 |预装驱动|Ubuntu 20.04 64位|nvidia550.67  cuda12.4  pytorch2.3.0|
 |预装驱动|Ubuntu 22.04 64位|nvidia535.161.07  cuda12.2  uefi|
-|预装驱动|Windows 2022 64位|nvidia551.61|
-|预装驱动|Windows 2019 64位 EN|nvidia531.18  cuda12.1.68  Tensorflow2.11.0|
+
