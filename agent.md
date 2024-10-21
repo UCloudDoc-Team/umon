@@ -127,14 +127,14 @@ rpm -e uma-py3
 
 ```
 wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.6-1_amd64.deb
-dpkg -i uma_1.2.5-1_amd64.deb
+dpkg -i uma_1.2.6-1_amd64.deb
 ```
 
 32位操作系统：
 
 ```
 wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.6-1_i386.deb
-dpkg -i uma_1.2.5-1_i386.deb
+dpkg -i uma_1.2.6-1_i386.deb
 
 ```
 
