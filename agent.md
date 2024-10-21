@@ -62,14 +62,14 @@
 
 ```
 wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.6-1.x86_64.rpm
-rpm -ivh uma-1.2.5-1.x86_64.rpm
+rpm -ivh uma-1.2.6-1.x86_64.rpm
 ```
 
 32位操作系统：
 
 ```
 wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.6-1.i386.rpm
-rpm -ivh uma-1.2.5-1.i386.rpm
+rpm -ivh uma-1.2.6-1.i386.rpm
 ```
 
 ### 3.1.2 python3版本uma安装 
@@ -78,7 +78,7 @@ rpm -ivh uma-1.2.5-1.i386.rpm
 
 ```
 wget http://umon.api.service.ucloud.cn/static/umatest/uma-py3-1.2.6-1.x86_64.rpm
-rpm -ivh uma-py3-1.2.5-1.x86_64.rpm
+rpm -ivh uma-py3-1.2.6-1.x86_64.rpm
 ```
 
 
