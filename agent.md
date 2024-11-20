@@ -63,7 +63,7 @@
 
 ```
 wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.7-1.x86_64.rpm
-rpm -ivh uma-1.2.6-1.x86_64.rpm
+rpm -ivh uma-1.2.7-1.x86_64.rpm
 ```
 
 32位操作系统：
