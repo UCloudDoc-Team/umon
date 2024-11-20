@@ -10,6 +10,7 @@
 
 | 更新时间   | Agent版本 | 更新内容说明                                                 | 备注 |
 | ---------- | --------- | ------------------------------------------------------------ | ---- |
+| 2024.11.05 | v1.2.7    | 修复云主机可识别pcle数量采集不正确的BUG                          |     |
 | 2024.10.15 | v1.2.6    | 新增 针对GPU云主机支持驱动识别的GPU卡数量、硬件识别的GPU卡数量指标采集`（仅限于A800 的部分行业镜像、H20 的部分行业镜像、高性价比显卡6的 Ubuntu部分版本及部分行业镜像、高性价比显卡6pro的 Ubuntu部分版本及部分行业镜像的GPU，列表见附录）`                      |详情见附录1     |
 | 2024.01.22 | v1.2.5    | 新增 支持空闲内存量、已用内存量、可用内存量指标采集，新增针对GPU云主机支持GPU卡显存使用量、 GPU卡显存使用率指标采集（仅限于nvidia的GPU）                      |     |
 | 2023.11.06 | v1.2.4    | 新增 支持GPU使用率、ECC纠错、驱动可识别性指标采集                          |     |
@@ -61,14 +62,14 @@
 64位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.6-1.x86_64.rpm
+wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.7-1.x86_64.rpm
 rpm -ivh uma-1.2.6-1.x86_64.rpm
 ```
 
 32位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.6-1.i386.rpm
+wget http://umon.api.service.ucloud.cn/static/umatest/uma-1.2.7-1.i386.rpm
 rpm -ivh uma-1.2.6-1.i386.rpm
 ```
 
@@ -77,7 +78,7 @@ rpm -ivh uma-1.2.6-1.i386.rpm
 64位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma-py3-1.2.6-1.x86_64.rpm
+wget http://umon.api.service.ucloud.cn/static/umatest/uma-py3-1.2.7-1.x86_64.rpm
 rpm -ivh uma-py3-1.2.6-1.x86_64.rpm
 ```
 
@@ -126,15 +127,15 @@ rpm -e uma-py3
 64位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.6-1_amd64.deb
-dpkg -i uma_1.2.6-1_amd64.deb
+wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.7-1_amd64.deb
+dpkg -i uma_1.2.7-1_amd64.deb
 ```
 
 32位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.6-1_i386.deb
-dpkg -i uma_1.2.6-1_i386.deb
+wget http://umon.api.service.ucloud.cn/static/umatest/uma_1.2.7-1_i386.deb
+dpkg -i uma_1.2.7-1_i386.deb
 
 ```
 
@@ -143,8 +144,8 @@ dpkg -i uma_1.2.6-1_i386.deb
 64位操作系统：
 
 ```
-wget http://umon.api.service.ucloud.cn/static/umatest/uma-py3_1.2.6-1_amd64.deb
-dpkg -i uma-py3_1.2.6-1_amd64.deb
+wget http://umon.api.service.ucloud.cn/static/umatest/uma-py3_1.2.7-1_amd64.deb
+dpkg -i uma-py3_1.2.7-1_amd64.deb
 ```
 
 
