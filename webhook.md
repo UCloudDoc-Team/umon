@@ -24,13 +24,17 @@ POST方式发送到指定URL，您可以对收到信息进行处理。
 ``` json
 {
     SessionID: "xxxxxxxxxxxxxxxxxxxxxxx",
-    Region: " cn-north-03",
+    Region: " cn-north",
+    Zone: " cn-north-03",
     ResourceType: "uhost",
     ResourceId: "uhost-xxxx",
     MetricName: "MemUsage",
     AlarmTime: 1458733318,
+    value: 12
+    ValueUnit: %
     RecoveryTime : 0，
-    Content："【UCloud】告警:北京二 2023-08-05 11:30:04 uhost(ID:uhost-xxxx-0.0.0.0-)连接数(330.00个)<6000个(优刻得公司)"
+    Duration: 123 
+    content："【UCloud】告警:北京二 2023-08-05 11:30:04 uhost(ID:uhost-xxxx-0.0.0.0-)连接数(330.00个)<6000个(优刻得公司)"
 }
 ```
 
@@ -39,27 +43,36 @@ POST方式发送到指定URL，您可以对收到信息进行处理。
 ``` json
 {
     SessionID: "xxxxxxxxxxxxxxxxxxxxxxx",
-    Region: "cn-north-03",
+    Region: " cn-north",
+    Zone: " cn-north-03",
     ResourceType: "uhost",
     ResourceId: "uhost-xxxx",
     MetricName: "MemUsage",
     AlarmTime: 0,
-    RecoveryTime: 1458733318,
-    Content："【UCloud】告警恢复:北京二 2023-08-05 11:30:04 uhost(ID:uhost-xxxx-0.0.0.0-)连接数(330.00个)<6000个(优刻得公司)"
+    value: 12
+    ValueUnit: %
+    RecoveryTime : 1458733318，
+    Duration: 123 
+    content："【UCloud】告警:北京二 2023-08-05 11:30:04 uhost(ID:uhost-xxxx-0.0.0.0-)连接数(330.00个)<6000个(优刻得公司)"
+}
 }
 ```
 
-#### Field Explaination
+#### 字段解释
 
-| Field        | Explaination                    |
+| 字段名        | 解释说明                   |
 | ------------ | ------------------------------- |
-| SessionID    | Session ID for this message     |
-| Region       | Region Name                     |
-| ResourceType | Resource Type                   |
-| MetricName   | Metric Name for current warning |
-| AlarmTime    | Alarm time                      |
-| RecoveryTime | Restory time                    |
-| Content      | Warning content                 |
+| SessionID    | 该会话的唯一标识符                |
+| Region       | 地域                            |
+| Zone         | 可用区                           |
+| ResourceType | 资源类型                          |
+| MetricName   | 指标名称                          |
+| AlarmTime    | 告警触发时间                      |
+| value        | 当前告警值                       |
+| ValueUnit    | 单位                            |
+| RecoveryTime | 告警恢复时间                     |
+| Duration     | 告警持续时长，单位：秒             |
+| content      | 告警内容                     |
 
 **Response**
 
