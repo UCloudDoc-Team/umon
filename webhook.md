@@ -53,7 +53,7 @@ POST方式发送到指定URL，您可以对收到信息进行处理。
     ValueUnit: %,
     RecoveryTime : 1458733318，
     Duration: 123,
-    content："【UCloud】告警:北京二 2023-08-05 11:30:04 uhost(ID:uhost-xxxx-0.0.0.0-)连接数(330.00个)<6000个(优刻得公司)"
+    content："【UCloud】告警恢复:北京二 2023-08-05 11:30:04 uhost(ID:uhost-xxxx-0.0.0.0-)连接数(330.00个)<6000个(优刻得公司)"
 }
 }
 ```
