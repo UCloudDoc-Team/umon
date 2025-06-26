@@ -4,7 +4,6 @@
 * 操作指南
     * [资源监控](/umon/guide/resource)
     * [告警模板](/umon/guide/template)
-    * [回调接口](/umon/guide/webhook)
     * [消息订阅](/umon/guide/message)
 * [资源监控](/umon/resource)
 * [告警模板](/umon/template)
