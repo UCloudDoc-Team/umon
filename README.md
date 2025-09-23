@@ -9,6 +9,4 @@
 * [资源监控](/umon/resource)
 * [告警模板](/umon/template)
 * [回调接口](/umon/webhook)
-* [监控代理](/umon/agent)
-* [FAQ](/umon/faq)
 

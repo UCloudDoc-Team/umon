@@ -7,13 +7,9 @@
 创建webhook后您的系统可以收到UCloud告警信息。当有告警时，UCloud的系统会将告警信息以HTTP
 POST方式发送到指定URL，您可以对收到信息进行处理。
 
-
-
 ## 条件
 
 用户需要提供接收POST请求的HTTP服务，以处理UCloud发送的POST请求，并将该服务的URL注册到UCloud的告警系统中。
-
-
 
 ## JSON Body Example
 
