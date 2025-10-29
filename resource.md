@@ -30,7 +30,7 @@
 
 ![](/images/resource_monitor_detail.png)
 
-> 注解：图中云主机共包含16个监控指标，其中一些监控指标需要安装监控代理才能够上报数据，如需为云主机安装监控代理，参见[监控代理](umon/agent)。
+> 注解：图中云主机共包含16个监控指标，其中一些监控指标需要安装监控代理才能够上报数据，如需为云主机安装监控代理，参见[了解新一代监控代理](https://cms-docs.ucloudadmin.com/cloudwatch/uboltagent/introduce)
 >
 
 
@@ -68,4 +68,3 @@
 ![](/images/resource8.png)
 
 > 注解：告警模板操作，参见 [告警模板](umon/template)
->
